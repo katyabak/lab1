@@ -11,4 +11,4 @@ def parse():
     description = '' # создаем пустую строку
     for data in block: # проходим по всем элементам в переменной block
         description += data.text.strip() # добавляем текст каждого элемента <ul> с удалением пробелов в начале и конце
-    '\n'.join(filter(lambda x: x.strip(), description.split('\n'))) # удаление пустых строк
+    return '\n'.join(filter(lambda x: x.strip(), description.split('\n'))) # удаление пустых строк
